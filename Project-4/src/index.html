@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>DIETITIAN ELITE</title>
+    
+    <!-- 1. Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- 2. Tailwind Config -->
+    <script src="js/tailwind-config.js"></script>
+    
+    <!-- 3. Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- 4. Custom CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 h-[80px] z-50 glass-header border-b border-[#F3F4F6]">
+        <div class="max-w-[1440px] mx-auto px-[120px] h-full flex justify-between items-center">
+            <a href="#hero" class="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
+                <img alt="Dietitian Elite Logo" 
+                     class="h-10 w-10 object-contain" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHJkOYL8F0O3T6UpuBhHMbGEyYKXbzMNxJN5zD4P11rYJh3IsrNTPNiKxatgYu0GjBFPLn4URZPIAeScH6YxBpuPAu0EuEijV8ixqypYqCUs2C8PhcucYc9DJYJ3WNa1goXj7mZJqOZCJsBFMe4UBaDoP2gPDQ2VtmqB5ud-BPdN2z5r-ixmqNJONx_AqsYTvoKwX2PQieq9-YCkD9wRvZiUsLckaX_xSshsCZ0PPjr01rvkvC_5lXjFL9SAjX1Ww4yfeaOXGZ-Ede"/>
+                <span class="text-2xl font-black tracking-tighter text-tertiary">DIETITIAN ELITE</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="font-label-caps text-[12px] tracking-[0.1em] uppercase font-bold text-secondary border-b-2 border-secondary pb-1" href="#programs">Программы</a>
+                <a class="font-label-caps text-[12px] tracking-[0.1em] uppercase font-bold text-on-primary-container hover:text-secondary transition-colors duration-300" href="#expertise">Экспертиза</a>
+                <a class="font-label-caps text-[12px] tracking-[0.1em] uppercase font-bold text-on-primary-container hover:text-secondary transition-colors duration-300" href="#guarantees">Гарантии</a>
+                <a class="font-label-caps text-[12px] tracking-[0.1em] uppercase font-bold text-on-primary-container hover:text-secondary transition-colors duration-300" href="#team">Команда</a>
+                <a class="font-label-caps text-[12px] tracking-[0.1em] uppercase font-bold text-on-primary-container hover:text-secondary transition-colors duration-300" href="#reviews">Отзывы</a>
+            </nav>
+            
+            <a href="#contact" class="px-6 py-3 border border-tertiary font-label-caps text-[12px] uppercase font-bold rounded-lg hover:bg-tertiary hover:text-white transition-all duration-300 active:scale-95 block text-center">
+                Записаться на прием
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content placeholder (for future sections) -->
+    <main class="pt-[80px]">
+        <!-- Content will be added here -->
+<!-- Hero Section -->
+<section id="hero" class="pt-[140px] pb-[160px] bg-gradient-to-b from-[#F9FAFB] to-[#F3F4F6]">
+    <div class="max-w-[1440px] mx-auto px-[120px] grid grid-cols-12 gap-gutter items-center">
+        <div class="col-span-7">
+            <h1 class="font-display-xl text-[64px] leading-[1.1] font-extrabold text-tertiary mb-8">
+                Минус 5–8 кг <span class="text-secondary">без голода</span> и отдельной готовки для семьи
+            </h1>
+            <p class="font-body-lg text-on-primary-container mb-12 max-w-[560px]">
+                Медицинская коррекция веса в Иркутске. Персональное сопровождение от дипломированного нутрициолога-диетолога с акцентом на метаболическое здоровье.
+            </p>
+            <div class="flex items-center gap-6">
+                <button class="px-10 py-5 bg-secondary text-white font-label-caps text-[14px] uppercase font-bold rounded-lg soft-shadow hover:opacity-90 transition-all active:scale-95">
+                    Получить план обследования
+                </button>
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                    <span class="font-label-caps text-[12px] text-on-primary-container uppercase">Медицинская лицензия</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-5 relative">
+            <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-white">
+                <img alt="Professional Dietitian" 
+                     class="w-full h-auto grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl6QnE87QXUKIigE8nVL4lfZyTg3cjWRfABcK0L9FPcYd1WZByBjd4uqXOjKaOFPY_--XqAxyHT9LfMu7dPUcSLUbAk5tbDNn1Ty-TT0NTLyqxouPqCMnvFW7PfT5lq-jXuuDZ_L24PKfi8IVRvj35sYKQO_83ECxnyJl0zu4qzdE-ntq9eIkZ77o8Yk8Wx7nxf0EIz8So8Q7UTqtweYISJkgj6vCKaaIcdNRkJN_8aau7qZM2fKipnaheCTdCQBEekUFATvrl9V0i"/>
+            </div>
+            <!-- Decorative Swiss Element -->
+            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/10 -z-0 rounded-full blur-3xl"></div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2: INTERACTIVE QUIZ (КАЛЬКУЛЯТОР СТОИМОСТИ) -->
+<section class="bg-white py-[160px]">
+    <div class="max-w-[1440px] mx-auto px-[120px] flex flex-col items-center">
+        <div class="max-w-[1000px] w-full text-center mb-12">
+            <h2 class="font-inter text-[42px] font-bold leading-tight text-tertiary mb-4">
+                Узнайте срок и стоимость достижения вашей цели
+            </h2>
+            <p class="font-inter text-[16px] text-on-primary-container">
+                Ответьте на 4 вопроса о вашем образе жизни и состоянии здоровья, чтобы мы могли составить персональный план и рассчитать бюджет.
+            </p>
+        </div>
+        
+        <div class="max-w-[1000px] w-full bg-white border border-[#E5E7EB] rounded-[12px] quiz-card-shadow overflow-hidden">
+            <!-- Progress Bar -->
+            <div class="w-full h-1.5 bg-[#F3F4F6]">
+                <div class="h-full bg-[#0D9488]" style="width: 25%;"></div>
+            </div>
+            
+            <div class="p-10">
+                <h3 class="font-inter text-[22px] font-semibold text-tertiary mb-8">
+                    Ваша цель (снижение веса / восстановление после родов / коррекция анализов)?
+                </h3>
+                
+                <div class="grid grid-cols-2 gap-4 mb-10">
+                    <!-- Option 1: Selected -->
+                    <div class="p-6 border-2 border-[#0D9488] rounded-lg cursor-pointer bg-white transition-colors">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-[#0D9488]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+                            <span class="font-inter font-medium text-tertiary">Снижение веса</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Option 2 -->
+                    <div class="p-6 border border-[#E5E7EB] rounded-lg cursor-pointer bg-white hover:border-[#D1D5DB] transition-colors">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-[#9CA3AF]">child_care</span>
+                            <span class="font-inter font-medium text-tertiary">Восстановление после родов</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Option 3 -->
+                    <div class="p-6 border border-[#E5E7EB] rounded-lg cursor-pointer bg-white hover:border-[#D1D5DB] transition-colors">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-[#9CA3AF]">biotech</span>
+                            <span class="font-inter font-medium text-tertiary">Коррекция анализов</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Option 4 -->
+                    <div class="p-6 border border-[#E5E7EB] rounded-lg cursor-pointer bg-white hover:border-[#D1D5DB] transition-colors">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-[#9CA3AF]">psychology</span>
+                            <span class="font-inter font-medium text-tertiary">Другое</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="w-full py-5 bg-[#0D9488] text-white font-inter font-bold text-lg rounded-lg hover:bg-[#0F766E] transition-colors">
+                    Получить расчет и PDF-гайд по дефицитам
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: TRUST SECTION -->
+<section id="expertise" class="bg-white pt-[140px] pb-[80px]" style="scroll-margin-top: 90px;">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <h2 class="font-inter text-[42px] font-bold text-center text-tertiary mb-[80px]">
+            Работаем по протоколам доказательной медицины, а не на догадках
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <!-- Column 1 -->
+            <div class="pr-12 border-r border-[#E5E7EB]">
+                <div class="flex items-baseline gap-2 mb-6">
+                    <span class="font-inter text-[56px] font-extrabold text-[#0D9488] leading-none">0%</span>
+                    <span class="font-inter text-[14px] font-bold text-[#0D9488] uppercase tracking-wider">сомнительных назначений</span>
+                </div>
+                <p class="font-inter text-[16px] text-on-primary-container leading-[1.6]">
+                    Мы не используем БАДы с недоказанной эффективностью или устаревшие методы. Каждая рекомендация базируется на международных медицинских гайдлайнах и свежих научных публикациях PubMed.
+                </p>
+            </div>
+            <!-- Column 2 -->
+            <div class="px-12 border-r border-[#E5E7EB]">
+                <h3 class="font-inter text-[24px] font-bold text-tertiary mb-6">Юридическая защита</h3>
+                <p class="font-inter text-[16px] text-on-primary-container leading-[1.6]">
+                    Заключаем официальный договор на оказание медицинских услуг. Ваши данные защищены по стандарту ФЗ-152, а процесс консультирования полностью прозрачен и задокументирован.
+                </p>
+            </div>
+            <!-- Column 3 -->
+            <div class="pl-12">
+                <div class="flex items-baseline gap-2 mb-6">
+                    <span class="font-inter text-[56px] font-extrabold text-[#0D9488] leading-none">94%</span>
+                    <span class="font-inter text-[14px] font-bold text-[#0D9488] uppercase tracking-wider">сохранение результата</span>
+                </div>
+                <p class="font-inter text-[16px] text-on-primary-container leading-[1.6]">
+                    Статистика наших клиентов в Иркутске показывает: вес не возвращается спустя год после завершения программы. Мы обучаем принципам нутрициологии, которые работают на дистанции всей жизни.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4: INDUSTRY EXPERTISE -->
+<section id="programs" class="bg-[#F9FAFB] py-[160px]" style="scroll-margin-top: 90px;">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <div class="max-w-[1200px] mx-auto">
+            <!-- Section Header -->
+            <div class="mb-[60px]">
+                <h2 class="font-display-xl text-[42px] leading-[1.1] font-extrabold text-tertiary max-w-[1000px] text-left">
+                    Решаем медицинские задачи, которые другие<br>называют «проблемами с волей»
+                </h2>
+                <div class="w-[40px] h-[3px] bg-secondary mt-8"></div>
+            </div>
+            
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Postpartum -->
+                <div class="bg-white rounded-lg p-10 card-shadow border border-[#F3F4F6] flex flex-col h-full">
+                    <span class="material-symbols-outlined text-secondary mb-6 text-4xl">pregnancy</span>
+                    <h3 class="font-headline-md text-tertiary mb-4">Послеродовое восстановление</h3>
+                    <p class="font-body-md text-on-primary-container italic mb-6 leading-relaxed">
+                        «Сил нет, вес стоит, а диеты пугают из-за ГВ.»
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-50">
+                        <p class="font-body-md font-bold text-tertiary">
+                            Восполнение дефицитов железа и йода. Лишние килограммы уходят физиологично.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Family Ration -->
+                <div class="bg-white rounded-lg p-10 card-shadow border border-[#F3F4F6] flex flex-col h-full">
+                    <span class="material-symbols-outlined text-secondary mb-6 text-4xl">family_restroom</span>
+                    <h3 class="font-headline-md text-tertiary mb-4">Семейный рацион</h3>
+                    <p class="font-body-md text-on-primary-container italic mb-6 leading-relaxed">
+                        «Устали готовить себе отдельно от мужа и детей.»
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-50">
+                        <p class="font-body-md font-bold text-tertiary">
+                            План питания из продуктов обычного супермаркета Иркутска. Вы продолжаете худеть.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Metabolic Correction -->
+                <div class="bg-white rounded-lg p-10 card-shadow border border-[#F3F4F6] flex flex-col h-full">
+                    <span class="material-symbols-outlined text-secondary mb-6 text-4xl">vital_signs</span>
+                    <h3 class="font-headline-md text-tertiary mb-4">Метаболическая коррекция</h3>
+                    <p class="font-body-md text-on-primary-container italic mb-6 leading-relaxed">
+                        «Вес растет «от воздуха», сахар и давление выше нормы.»
+                    </p>
+                    <div class="mt-auto pt-6 border-t border-gray-50">
+                        <p class="font-body-md font-bold text-tertiary">
+                            Снижение инсулинорезистентности. Худеете за счет коррекции гормонального фона.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5: DOCTOR-PARTNER -->
+<section class="bg-white py-[160px]">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <div class="max-w-[1200px] mx-auto">
+            <!-- Title -->
+            <h2 class="font-inter text-[42px] font-bold text-tertiary text-center mb-16">
+                Мы на вашей стороне, даже когда вы не в ресурсе
+            </h2>
+            
+            <!-- High-quality Image -->
+            <div class="w-full h-[600px] mb-16 rounded-lg overflow-hidden bg-gray-50">
+                <img alt="Professional medical consultation" 
+                     class="w-full h-full object-cover grayscale-[20%] brightness-[1.02]" 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVPoxyKhXtiBt_8CIYmA1JYQ_Cwl_MaKpiqwqMNoEmc-HL7naMzO-F3ztK3ysv3RQdIbvvQZVcX2VsSFQmzlFqYQU9lDq1CxZLa7Kw2w4ZAsg1lOoxlUmMP8ZtT9NqTthMzdXXf8vEuytc63-ii0JgqUl0vKSSEoRF-7vLzKfNPYKtJNfx_SX6f7n2N5UeCm1syTUlSBbEa-zhhFZukS6Jgaxz-ut0ZQYvUCut-T2Jyf2Y7cewlVNBkw7nuRVpuDCzLLCfdvD_niq8"/>
+            </div>
+            
+            <!-- Content Block -->
+            <div class="max-w-[900px] mx-auto text-center">
+                <h3 class="font-inter text-[28px] font-medium text-[#111827] mb-8">
+                    Врач-партнер, а не просто контролер
+                </h3>
+                <p class="font-body-lg text-on-primary-container leading-[1.8]">
+                    В клиниках Иркутска прием часто заканчивается на выдаче листа с диетой. Мы работаем иначе. Вы получаете наставника, который анализирует ваш образ жизни, биохимию крови и психологический комфорт. Мы не просто указываем, что есть — мы даем инструменты, чтобы вы управляли своим телом сами.
+                </p>
+                <div class="mt-12">
+                    <button class="bg-secondary text-white px-10 py-4 rounded-lg font-label-caps font-bold hover:opacity-90 transition-all active:scale-95 shadow-sm">
+                        Записаться на диагностику
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6: Service & Time Saving -->
+<section id="guarantees" class="bg-surface-container-lowest pt-[140px] pb-[80px]" style="scroll-margin-top: 50px;">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <div class="max-w-[1200px] mx-auto">
+            <h2 class="font-headline-lg text-[42px] leading-tight text-center text-primary mb-[80px]">
+                Сервис, который экономит ваше время и нервы
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Service Item 1 -->
+                <div class="flex flex-col">
+                    <div class="mb-6">
+                        <span class="material-symbols-outlined text-secondary text-4xl">schedule</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-4 text-primary">Прием строго по часам</h3>
+                    <p class="font-body-md text-on-surface-variant leading-[1.6] text-[#4B5563]">
+                        Мы ценим ваш график. Если прием задержится более чем на 15 минут по нашей вине, мы вернем полную стоимость консультации.
+                    </p>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="flex flex-col">
+                    <div class="mb-6">
+                        <span class="material-symbols-outlined text-secondary text-4xl">chat_bubble</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-4 text-primary">Связь 24/7 в мессенджерах</h3>
+                    <p class="font-body-md text-on-surface-variant leading-[1.6] text-[#4B5563]">
+                        Ваш персональный куратор ответит на любой экстренный вопрос в течение 15 минут. Поддержка доступна в Telegram и WhatsApp.
+                    </p>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="flex flex-col">
+                    <div class="mb-6">
+                        <span class="material-symbols-outlined text-secondary text-4xl">smartphone</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-4 text-primary">Все в смартфоне</h3>
+                    <p class="font-body-md text-on-surface-variant leading-[1.6] text-[#4B5563]">
+                        Забудьте о бумажных папках. Все результаты анализов, планы питания и рецепты доступны в виде структурированных PDF в вашем личном кабинете.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 7: Team & Reviews -->
+<section id="team" class="bg-surface-container-low pt-[80px] pb-[60px]" style="scroll-margin-top: 1px;">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <div class="max-w-[1200px] mx-auto">
+            <h2 class="font-headline-lg text-[42px] leading-tight text-center text-primary mb-[100px]">
+                Опыт, подтвержденный результатами сотен женщин Иркутска
+            </h2>
+            
+            <!-- Team Sub-block -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-[120px]">
+                <!-- Expert 1 -->
+                <div class="bg-white p-8 border border-[#F3F4F6] medical-card-shadow rounded-lg group hover:border-secondary transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-surface-variant mb-8 overflow-hidden rounded-sm">
+                        <img alt="Expert Medical Consultant" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx9mkujFoBtE2N3Cfqe0yy7AAR-Vp-Y95YYCLjoU8-ua7vfbarcDJqcdUK3fuRWs7Idc8GgNSAaupBhbuMDReXlQ6tT0DkYKJbIm4ljX6v4aEqJXZ0Xwjh1Xt3ztrPPs5TcWj6UUsVZFQMoeBvNPkzvwKhXBRg6An6hja_v2mmMlBz8c4_jZXrsle61IGwBq3gTuhzlnn5DQ6f8hac4GpLFo2d_nrCXuRe9mOEQ4zjq-0YP4-tc3Uo7uTGKznPvJGYJYZkOPhTH2wG"/>
+                    </div>
+                    <h4 class="font-headline-md text-[22px] mb-2 text-primary">Антонина Леонтьева</h4>
+                    <p class="font-label-caps text-secondary mb-4">Ведущий диетолог-эндокринолог</p>
+                    <p class="font-body-md text-on-surface-variant text-[16px]">
+                        12 лет практики в области метаболической коррекции. Автор методики «Интегративное долголетие».
+                    </p>
+                </div>
+                
+                <!-- Expert 2 -->
+                <div class="bg-white p-8 border border-[#F3F4F6] medical-card-shadow rounded-lg group hover:border-secondary transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-surface-variant mb-8 overflow-hidden rounded-sm">
+                        <img alt="Medical Specialist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxX-zuMYzUI2-snciwFMTKk0gOmG60QujZldTdozOfUQFGo2c0VlpK1BB_troYBWHc-VJNWlC0-qw4UHeiaReJEeRMRD_W4qkFwPHfsDGSbbca1MjsznhaQn0z7NAt-VvlTLripVL0-QsHS6bbjwHxZAJh18VAk99W0h0tV_cyOjw0lYj6vDziy8Vh517M8EjvzuKht-Zy7PxCsr6EG2w2F-Jl7W2XtDj2FEJqXpZoCsQecYd1JBumcrm2yWj_sp53pFYaXo_ZIL7X"/>
+                    </div>
+                    <h4 class="font-headline-md text-[22px] mb-2 text-primary">Елена Шкутник</h4>
+                    <p class="font-label-caps text-secondary mb-4">Нутригенетик, К.М.Н.</p>
+                    <p class="font-body-md text-on-surface-variant text-[16px]">
+                        Специалист по генетическому анализу питания. Помогает настроить рацион на основе ДНК-тестирования.
+                    </p>
+                </div>
+                
+                <!-- Expert 3 -->
+                <div class="bg-white p-8 border border-[#F3F4F6] medical-card-shadow rounded-lg group hover:border-secondary transition-colors duration-300">
+                    <div class="aspect-[4/5] bg-surface-variant mb-8 overflow-hidden rounded-sm">
+                        <img alt="Healthcare Expert" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfaVg8MlZpnJi8G5Vng63wHi4Xok0c-HNMbO3m1EF5C1KdBficFRkPStf4nVRKNvdcljcInXOR6I8HyvhI30Hi2lAGhOiNHw5lJnxxdJsoBTlUdSZ_r6wV-FP4vSlnBp_YJsVyE1CU9uQRYlmqYFRzQkyWm1hc6WQqjeVP0g2mpFh-7tyvieJmw2nJi-BmlNkN0dGHyKx19xgEqVqk1YJAkrO8iOac3sxVvfSxolvVTMGcxQk0UF-ibxw95QuV6T9AdL7UXwgkkoe0"/>
+                    </div>
+                    <h4 class="font-headline-md text-[22px] mb-2 text-primary">Александр Волков</h4>
+                    <p class="font-label-caps text-secondary mb-4">Специалист по биохакингу</p>
+                    <p class="font-body-md text-on-surface-variant text-[16px]">
+                        Эксперт в области оптимизации физических показателей и повышения когнитивных способностей через питание.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Reviews Sub-block -->
+            <div id="reviews" class="grid grid-cols-1 md:grid-cols-3 gap-6" style="scroll-margin-top: 90px;">
+                <!-- Review 1 -->
+                <div class="p-8 border border-outline-variant rounded-lg bg-surface-container-lowest italic">
+                    <p class="text-[15px] font-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        «Впервые за 5 лет я увидела реальный результат в анализах. Никаких лишних назначений, все четко по делу. Уровень сервиса в Иркутске, которого я раньше не встречала.»
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-secondary"></div>
+                        <span class="font-label-caps not-italic text-primary">Марина С.</span>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="p-8 border border-outline-variant rounded-lg bg-surface-container-lowest italic">
+                    <p class="text-[15px] font-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        «Самое ценное — это время. План питания пришел в PDF на телефон, куратор всегда на связи. Моя жизнь стала проще, а самочувствие — в разы лучше.»
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-secondary"></div>
+                        <span class="font-label-caps not-italic text-primary">Ольга П.</span>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="p-8 border border-outline-variant rounded-lg bg-surface-container-lowest italic">
+                    <p class="text-[15px] font-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        «Команда профессионалов. Антонина помогла разобраться с дефицитами, о которых я даже не подозревала. Это инвестиция в себя, которая окупается каждый день.»
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-px bg-secondary"></div>
+                        <span class="font-label-caps not-italic text-primary">Татьяна В.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 8: LEAD MAGNET (ЗАГРУЗКА) -->
+<section id="contact" class="bg-[#111827] py-[160px] flex items-center justify-center" style="scroll-margin-top: 0px;">
+    <div class="max-w-[1440px] w-full px-[120px]">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="max-w-[1000px] mx-auto text-center">
+                <h2 class="font-inter text-[36px] leading-[1.2] font-bold text-[#FFFFFF] mb-6">
+                    С чего начать путь к стройности без ошибок?
+                </h2>
+                <p class="font-inter text-[18px] font-normal text-[#9CA3AF] mb-12">
+                    Получите чек-лист «12 обязательных анализов перед снижением веса», чтобы не тратить деньги на лишние исследования. Оставьте ваш номер, и мы пришлем список в удобный мессенджер через 30 секунд.
+                </p>
+                <form class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+                    <div class="w-full md:w-auto flex-1 max-w-[300px]">
+                        <input class="w-full bg-[#1F2937] border border-[#374151] rounded-[6px] px-5 py-4 text-white placeholder-white focus:outline-none focus:ring-1 focus:ring-[#0D9488] transition-all font-inter" placeholder="Ваше имя" type="text"/>
+                    </div>
+                    <div class="w-full md:w-auto flex-1 max-w-[300px]">
+                        <input class="w-full bg-[#1F2937] border border-[#374151] rounded-[6px] px-5 py-4 text-white placeholder-white focus:outline-none focus:ring-1 focus:ring-[#0D9488] transition-all font-inter" placeholder="Номер телефона" type="tel"/>
+                    </div>
+                    <button class="w-full md:w-auto bg-[#0D9488] hover:bg-[#0F766E] text-[#FFFFFF] font-inter text-[18px] font-semibold px-10 py-4 rounded-[6px] transition-colors duration-300" type="submit">
+                        Получить чек-лист
+                    </button>
+                </form>
+                <div class="flex items-center justify-center gap-2 text-[#6B7280] text-sm">
+                    <span class="material-symbols-outlined text-[16px]">verified_user</span>
+                    <span>Ваши данные защищены и не передаются третьим лицам</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#111827] w-full pt-[160px] pb-[60px] border-t border-gray-800">
+    <div class="max-w-[1440px] mx-auto px-[120px]">
+        <div class="flex flex-col items-center text-center">
+            <a href="#hero" class="text-white font-black text-xl mb-8 uppercase tracking-tighter hover:text-secondary transition-colors duration-300">DIETITIAN ELITE</a>
+            <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2 font-inter text-[14px] font-normal text-[#6B7280]">
+                <span>г. Иркутск, [Ваш Адрес]</span>
+                <span class="w-[6px] h-[6px] rounded-full bg-[#0D9488]"></span>
+                <span>+7 (___) ___ __ __</span>
+                <span class="w-[6px] h-[6px] rounded-full bg-[#0D9488]"></span>
+                <span>ИНН/ОГРН</span>
+                <span class="w-[6px] h-[6px] rounded-full bg-[#0D9488]"></span>
+                <a class="hover:text-white transition-all duration-300" href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            <div class="mt-12 pt-12 border-t border-gray-800 w-full flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-manrope text-xs tracking-widest uppercase text-gray-400">
+                    © 2024 DIETITIAN ELITE MEDICAL CONSULTING. SWISS PRECISION IN NUTRITION.
+                </p>
+                <div class="flex gap-6">
+                    <a class="font-manrope text-xs tracking-widest uppercase text-gray-400 hover:text-white transition-all duration-300" href="#">Privacy Policy</a>
+                    <a class="font-manrope text-xs tracking-widest uppercase text-gray-400 hover:text-white transition-all duration-300" href="#">Terms of Service</a>
+                    <a class="font-manrope text-xs tracking-widest uppercase text-gray-400 hover:text-white transition-all duration-300" href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </main>
+
+</body>
+</html>

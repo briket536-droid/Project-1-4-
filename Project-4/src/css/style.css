@@ -1,0 +1,50 @@
+/* CSS Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Layout */
+:root {
+    --work-area: 1140px;
+    --ear-width: 150px;
+    --total-width: calc(var(--work-area) + (var(--ear-width) * 2));
+}
+
+
+
+/* Base */
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Material Icons */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glass Header Effect */
+.glass-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Shadows (for future use) */
+.soft-shadow {
+    box-shadow: 0 10px 30px -10px rgba(0, 111, 102, 0.2);
+}
+
+.card-shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Image hover effect */
+.grayscale-\[20\%\] {
+    filter: grayscale(20%);
+}
+
+.grayscale-0 {
+    filter: grayscale(0%);
+}
+
+/* Decorative blur element */
+.blur-3xl {
+    filter: blur(3rem);
+}
